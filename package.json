@@ -1,0 +1,34 @@
+{
+  "name": "douchong-notify",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "QQ group notifications and Bilibili live-data queries for VR_douchong",
+  "license": "GPL-2.0-only",
+  "author": {
+    "name": "小恩",
+    "url": "https://github.com/kmtshl-hub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmtshl-hub/douchong-notify.git"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "verify": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@snowluma/sdk": "1.14.20",
+    "dotenv": "16.6.1",
+    "tsx": "4.23.15"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  }
+}

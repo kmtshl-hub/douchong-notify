@@ -1,0 +1,9 @@
+# 开发 / 校验用依赖（运行期不需要这些）
+#
+# ruff：与上游 VR_douchong 使用同一套 Python lint 工具。
+#   本仓库的规则集在 ruff.toml 里显式声明（不同 ruff 版本的默认规则集不同，
+#   不写死会导致「lint 是否通过」随版本漂移）。
+# pytest：仅用于收集可被它识别的用例；本仓库的 Python 测试以「脚本式」为主，
+#   直接用 python3 运行每个文件也可以（见 README「开发与验证」）。
+ruff>=0.6
+pytest>=8

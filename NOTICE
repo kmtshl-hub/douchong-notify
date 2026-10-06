@@ -1,0 +1,59 @@
+NOTICE — Third-Party Licenses and Upstream Attribution
+=======================================================
+
+This project is a **derivative extension** of VR_douchong by QianQiuZy.
+It is **not** the upstream project itself and cannot run without it.
+
+This repository
+---------------
+  Name       : douchong-notify
+  Maintainer : 小恩
+  URL        : https://github.com/kmtshl-hub/douchong-notify
+  Copyright  : Copyright (C) 2026 小恩 <https://github.com/kmtshl-hub>
+  License    : GPL-2.0-only
+
+Upstream project
+----------------
+  Name    : VR_douchong（VR斗虫自搭版）
+  Author  : QianQiuZy
+  Author  : https://github.com/QianQiuZy
+  URL     : https://github.com/QianQiuZy/VR_douchong
+  License : GNU General Public License v2.0
+            https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
+What this repository contains
+-----------------------------
+  1. Modified versions of upstream source files
+     (services/douchong-notify/patches/, services/douchong-report/danmaku_metrics.py).
+     Each modified file keeps the original copyright notice and documents
+     the changes applied, as required by GPL-2.0 §2(a) and §2(b).
+
+  2. Original modules written by this project's maintainers, designed to be
+     loaded into the VR_douchong process at runtime
+     (services/douchong-notify/notify/, src/).
+
+  3. A plain-text **stub** for the image-card renderer
+     (services/douchong-notify/notify/dynamic_render.py). The full renderer is
+     not part of this release; every caller already falls back to plain text
+     when it returns None.
+
+Not included in this release
+----------------------------
+  * The image-card renderer implementation
+    (Bilibili-dynamic-style PNG cards).
+  * The elaborated session-report layout (leaderboards, multi-section layout).
+  * Bundled font assets.
+
+  These are intentionally omitted. The extension remains fully functional in
+  plain-text mode without them. See README.md for details.
+
+License
+-------
+All files in this repository are distributed under the terms of the
+GNU General Public License v2.0 only (SPDX: GPL-2.0-only), in compliance
+with the upstream license.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.

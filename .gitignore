@@ -1,0 +1,35 @@
+# Node
+node_modules/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 本地配置（含凭据，绝不入库）
+.env
+.env.*
+!.env.example
+data/
+
+# Vite / Vitest（见 vitest.config.ts 注释：必须落在仓库内）
+.vite-cache/
+.tmp/
+.tmp-vitest/
+vitest.config.ts.timestamp-*.mjs
+*.timestamp-*.mjs
+
+# 日志 / 归档
+*.log
+*.zip
+*.tar
+*.tgz
+
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
